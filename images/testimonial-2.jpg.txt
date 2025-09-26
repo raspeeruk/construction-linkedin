@@ -1,0 +1,3 @@
+This is a placeholder for the second testimonial image.
+In a production environment, replace this with an actual JPG image of a female construction executive.
+Recommended size: 120x120px
