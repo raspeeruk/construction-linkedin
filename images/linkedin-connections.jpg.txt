@@ -1,0 +1,3 @@
+This is a placeholder for the LinkedIn connections graphic.
+In a production environment, replace this with an actual JPG image showing connection requests overlaid with LinkedIn posts.
+Recommended size: 600x400px
