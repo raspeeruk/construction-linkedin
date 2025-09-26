@@ -192,17 +192,26 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
+    flex-shrink: 0;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
+    align-items: center;
 }
 
 nav a {
