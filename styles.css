@@ -70,8 +70,9 @@ p {
 
 .subtitle {
     font-size: 1.25rem;
-    color: var(--gray);
+    color: var(--white);
     margin-bottom: 2rem;
+    line-height: 1.5;
 }
 
 strong {
@@ -141,6 +142,15 @@ section:nth-child(even) {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+}
+
+#hero .cta-group {
+    margin-top: 2.5rem;
+}
+
+#hero .primary-cta {
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
 }
 
 /* Cards */
