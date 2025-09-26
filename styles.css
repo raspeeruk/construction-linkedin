@@ -128,13 +128,13 @@ section:nth-child(even) {
 
 .secondary-cta {
     background-color: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    color: var(--white);
+    border: 2px solid var(--white);
 }
 
 .secondary-cta:hover {
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--primary);
 }
 
 .cta-group {
@@ -190,7 +190,7 @@ header {
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -203,6 +203,7 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin: 0 auto;
 }
 
 nav a {
@@ -409,7 +410,7 @@ nav a:hover {
 /* ===== PRICING SECTION ===== */
 .pricing-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -493,6 +494,69 @@ nav a:hover {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     width: 100%;
+}
+
+/* Comparison Table */
+.comparison-table {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin-top: 3rem;
+}
+
+.comparison-table h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.comparison-table th {
+    background-color: var(--light);
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table .fa-check {
+    color: var(--secondary);
+}
+
+.comparison-table .fa-times {
+    color: var(--gray);
+}
+
+.get-in-touch {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--light-gray);
+}
+
+.get-in-touch p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .guarantee {
@@ -674,6 +738,14 @@ footer {
     
     .pricing-card.featured {
         transform: scale(1);
+    }
+    
+    .comparison-table {
+        overflow-x: auto;
+    }
+    
+    .comparison-table table {
+        min-width: 650px;
     }
 }
 
